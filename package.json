@@ -1,0 +1,15 @@
+{
+  "name": "mindwell-ai",
+  "version": "1.0.0",
+  "description": "MindWell AI - personalized mental wellness and mini-game platform (Sinhala + English)",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node --watch backend/server.js"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}

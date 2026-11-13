@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Catch & Collect</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/games.css">
+</head>
+<body data-page="game">
+<main>
+  <h1 data-i18n="catch.name"></h1>
+  <div class="chips" id="interest-picker" style="margin-bottom:1rem"></div>
+  <div class="game-layout">
+    <div>
+      <div class="hud" aria-live="polite"><span id="hud-score"></span><span id="hud-stars"></span><span id="hud-time"></span></div>
+      <div class="canvas-wrap">
+        <canvas id="game" width="640" height="480" aria-label="Happy Catch & Collect game"></canvas>
+        <div id="overlay" class="overlay"><div class="box">
+          <h2 id="ov-title"></h2><p id="ov-body"></p><p id="ov-badge" style="font-weight:800"></p>
+          <div id="ov-modes" class="row" style="justify-content:center">
+            <button id="btn-relaxed" class="btn mint" type="button" data-i18n="catch.relaxed"></button>
+            <button id="btn-timed" class="btn apricot" type="button" data-i18n="catch.timed"></button>
+          </div>
+          <button id="ov-resume" class="btn mint" type="button" data-i18n="common.resume" hidden></button>
+        </div></div>
+      </div>
+      <div class="touch-controls">
+        <button id="btn-left" class="btn soft" type="button" data-i18n-aria="catch.left">◀</button>
+        <button id="btn-right" class="btn soft" type="button" data-i18n-aria="catch.right">▶</button>
+      </div>
+      <div class="row" style="margin-top:.8rem">
+        <button id="btn-pause" class="btn soft" type="button"></button>
+        <button id="btn-restart" class="btn soft" type="button" data-i18n="common.restart"></button>
+        <button id="btn-finish" class="btn soft" type="button" data-i18n="catch.finish"></button>
+        <button id="btn-mute" class="btn soft" type="button"></button>
+        <a class="btn soft" href="games.html" data-i18n="common.exit"></a>
+      </div>
+    </div>
+    <aside class="panel princess-box">
+      <div class="princess" aria-hidden="true">👸</div>
+      <h2 data-i18n="catch.basket"></h2>
+      <div id="basket" class="basket" aria-hidden="true"></div>
+      <p id="praise" style="font-weight:800" aria-live="polite"></p>
+    </aside>
+  </div>
+</main>
+<script src="js/storage.js"></script>
+<script src="js/language.js"></script>
+<script src="js/preferences.js"></script>
+<script src="js/app.js"></script>
+<script src="js/game-catch.js"></script>
+</body>
+</html>

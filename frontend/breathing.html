@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Breathing - MindWell AI</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="breathing">
+<main style="text-align:center">
+  <h1 data-i18n="breath.title"></h1>
+  <p class="muted" data-i18n="breath.hint" style="margin-inline:auto"></p>
+  <div class="breath-stage"><div id="breath-circle" class="breath-circle"><span id="breath-label" aria-live="polite"></span></div></div>
+  <div class="row" style="justify-content:center">
+    <button id="breath-start" class="btn mint" type="button" data-i18n="common.start"></button>
+    <button id="breath-stop" class="btn soft" type="button" data-i18n="common.stop"></button>
+    <a class="btn soft" href="index.html" data-i18n="common.exit"></a>
+  </div>
+</main>
+<script src="js/storage.js"></script>
+<script src="js/language.js"></script>
+<script src="js/preferences.js"></script>
+<script src="js/app.js"></script>
+<script src="js/breathing.js"></script>
+</body>
+</html>

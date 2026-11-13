@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Garden</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/games.css">
+</head>
+<body data-page="game">
+<main>
+  <h1 data-i18n="garden.name"></h1>
+  <div class="chips" id="interest-picker"></div>
+  <p class="muted" data-i18n="garden.pick" style="margin-top:1rem"></p>
+  <div id="palette" class="palette"></div>
+  <div id="garden-grid" class="garden-grid"></div>
+  <p id="garden-msg" style="text-align:center;font-weight:800" aria-live="polite"></p>
+  <div class="row" style="justify-content:center">
+    <button id="garden-save" class="btn mint" type="button" data-i18n="common.save"></button>
+    <button id="garden-clear" class="btn soft" type="button" data-i18n="common.clear"></button>
+    <a class="btn soft" href="games.html" data-i18n="common.exit"></a>
+  </div>
+</main>
+<script src="js/storage.js"></script>
+<script src="js/language.js"></script>
+<script src="js/preferences.js"></script>
+<script src="js/app.js"></script>
+<script src="js/game-garden.js"></script>
+</body>
+</html>

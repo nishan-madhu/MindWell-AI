@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Memory Match</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/games.css">
+</head>
+<body data-page="game">
+<main>
+  <h1 data-i18n="memory.name"></h1>
+  <div class="chips" id="interest-picker"></div>
+  <p id="memory-info" style="font-weight:800;margin-top:1rem" aria-live="polite"></p>
+  <div id="memory-grid" class="memory-grid"></div>
+  <p id="memory-msg" style="font-weight:800;text-align:center" aria-live="polite"></p>
+  <div class="row" style="justify-content:center">
+    <button id="memory-restart" class="btn soft" type="button" data-i18n="common.restart"></button>
+    <a class="btn soft" href="games.html" data-i18n="common.exit"></a>
+  </div>
+</main>
+<script src="js/storage.js"></script>
+<script src="js/language.js"></script>
+<script src="js/preferences.js"></script>
+<script src="js/app.js"></script>
+<script src="js/game-memory.js"></script>
+</body>
+</html>
